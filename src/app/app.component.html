@@ -3,14 +3,33 @@
     <h1 class="text-center">Diana Martínez Andrade</h1>
   </div>
   <div class="all-content">
-    <h2>Company info</h2>
+    <h2 class="text-center">Company info</h2>
     <div class="content">
-      <h4>Name: {{data.name}}</h4>
-      <p>Summary: {{data.summary}}</p>
-      <p>Valuation: {{data.valuation}}</p>
-      <p>Address: {{data.headquarters.address}}</p>
-      <p>State: {{data.headquarters.city}}</p>
-      <p>City: {{data.headquarters.state}}</p>
+      <h4>address: {{data.headquarters.address}}</h4>
+      <p>city: {{data.headquarters.city}}</p>
+      <p>state: {{data.headquarters.state}}</p>
+      <p>website: {{data.links.website}}</p>
+      <p>flickr: {{data.links.flickr}}</p>
+      <p>twitter: {{data.links.twitter}}</p>
+      <p>elon_twitter:{{data.links.elon_twitter}}
+      </p>
+    </div>
+    <h2 class="text-center">Capsules</h2>
+    <div class="content2">
+
+      <div *ngFor="let i of datag"  class="new-content">
+       <div class="new-content2">
+        <p>  reuse_count = {{i.reuse_count}}</p>
+        <p>  water_landings = {{i.water_landings}}</p>
+        <p>  land_landings = {{i.land_landings}}</p>
+        <p>  last_update = {{i.last_update}}</p>
+        <p>  launches = {{i.launches}}</p>
+        <p>  serial = {{i.serial}}</p>
+        <p>  status = {{i.status}}</p>
+        <p>  type = {{i.type}}</p>
+        <p>  id = {{i.id}}</p>
+       </div>
+      </div>
     </div>
   </div>
 </div>
