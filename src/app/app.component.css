@@ -6,12 +6,11 @@
 
 .container{
   margin:5vw;
-  background-color: aliceblue;
 }
 
 .content{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
 }
 
 h2{
